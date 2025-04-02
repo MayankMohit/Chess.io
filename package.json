@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon --watch . app.js",
+    "start": "powershell -Command \"Write-Host 'Run one by one:' -ForegroundColor Cyan; Write-Host 'Set-ExecutionPolicy Unrestricted -Scope Process' -ForegroundColor Yellow; Write-Host 'ngrok http 3000' -ForegroundColor Yellow; Write-Host 'npm run dev' -ForegroundColor Yellow\"",
+    "dev": "nodemon --watch . app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

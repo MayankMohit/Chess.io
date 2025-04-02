@@ -53,3 +53,14 @@
 .flipped .piece {
     transform: rotate(180deg);
 }
+
+/* .player{
+
+} */
+
+.chessboard, .piece {
+    user-select: none; /* Prevents text selection */
+    -webkit-user-select: none; /* For Safari */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none; /* For old IE */
+}

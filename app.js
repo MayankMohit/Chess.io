@@ -61,6 +61,10 @@ io.on("connection", (uniquesocket) => {
             uniquesocket.emit("Invalid Move: ", move)
         }
     })
+    
+    uniquesocket.on("debugLog", (data) => {
+        console.log("Move Attempt:", data);
+    });
 })
 
 server.listen(3000, '0.0.0.0', () => {
