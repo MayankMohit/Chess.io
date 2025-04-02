@@ -36,6 +36,7 @@
 }
 
 .piece {
+    font-family: "Arial Unicode MS", "Noto Sans Symbols", sans-serif;
     font-size: 36px;
     cursor: pointer;
 }
